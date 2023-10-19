@@ -3,23 +3,19 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   //estilização do contexto do Form
   formContext: {
-    width: "100%",
-    height: "100%",
-    justifyContent: "space-around",
-    bottom: 0,
+    flex:1,
     backgroundColor: "#ffffff",
+    marginTop:25,
     alignItems: "center",
     borderTopRightRadius: 35,
     borderTopLeftRadius: 35,
-    paddingTop:15,
-    marginTop: 20,
+    paddingTop:30,
+   
   },
 
   form: {
     width: "100%",
-    height: "auto",
-    marginTop: 30,
-    padding: 10,
+    paddingTop: 10,
   },
   formLabel: {
     color: "#000000",
@@ -57,7 +53,34 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     paddingLeft:20,
 
+  },
+  exhibitionResultImc: {
+    width: "100%",
+    height: "50%",
+
+  },
+  listImcs:{
+    marginTop: 22,
+    borderRadius: 25,
+
+  },
+  resultImcItem:{
+    fontSize: 27,
+    color: "red",
+    height: 50,
+    width: "100%",
+    paddingRight: 20,
+    backgroundColor: "#f6f6f6",
+    borderRadius: 5,
+   
+  },
+  textResultItem:{
+    fontSize: 16,
+    color: "red",
+    borderRadius: 25,
+
   }
+
 });
 
 export default styles;
