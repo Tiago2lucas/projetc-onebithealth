@@ -22,9 +22,8 @@ export default function Form() {
   const [imcList, setImcList] = useState([]);
 
   function imcCalculator() {
-    // O heigthFormat Muda o formato de Virgula(,) para ponto (.)
     let heigthFormat = height.replace(",", ".");
-    //Calcular o Valor do imc
+
     let totalImc = (weight / (heigthFormat * heigthFormat)).toFixed(2);
     setImcList((arr) => [...arr, { id: new Date().getTime(), imc: totalImc }]);
     setImc(totalImc);
@@ -37,10 +36,8 @@ export default function Form() {
     }
   }
 
-  // Função para validar os campos de preenchimento do form, e também para auto calcular novamente ao precionar
-  // o botão apos termina de calcular.
   function validationImc() {
-    console.log(imcList)
+    console.log(imcList);
     if (weight !== null && height !== null) {
       imcCalculator();
       setHeight(null);
@@ -102,21 +99,19 @@ export default function Form() {
         </View>
       )}
       <FlatList
-      showsVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
         style={styles.listImcs}
         data={[...imcList].reverse()}
         renderItem={({ item }) => {
           return (
-            <Text style={styles.resultImcItem} >
-          <Text style= {styles.textResultItem} >Resultado do Imc =</Text>
-          {item.imc}</Text>
-          
-          )
-
-
+            <Text style={styles.resultImcItem}>
+              <Text style={styles.textResultItem}>Resultado do Imc =</Text>
+              {item.imc}
+            </Text>
+          );
         }}
-        keyExtractor={(item)=> {
-          item.id
+        keyExtractor={(item) => {
+          item.id.toString();
         }}
       ></FlatList>
     </View>
