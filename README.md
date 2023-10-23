@@ -41,7 +41,7 @@ health/assets/108035638/1d12943e-269a-48ff-8d1e-0db9d27c37d7 />
 </div>
 
 ### Informação da tela de compartilhamento
-* A tela tem um botão que faz com que você compartilhe seu IMC
+* A tela tem um botão chamado "share" que faz com que você compartilhe seu IMC
 <div>
  <br>
  <img width="25%" height="500px" src="https://github.com/Tiago2lucas/projetc-onebithealth/assets/108035638/a3d14392-4e26-48fb-98d5-4547714a308e"
