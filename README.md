@@ -23,7 +23,7 @@ O Projeto é um simples <strong>calculadora de Imc</strong>, com compartilhament
  * [Expo]( https://expo.dev/)
 
 ## Como iniciar o project, como usar:
-* Para inciar o project baixa o node.js que ja vem com npm, ele que vamos usar para inciar o projeto.
+* Para inciar o project deve baixa o node.js que ja vem com npm, ele que vamos usar para inciar o projeto.
 * Instalar dependências listada no json:
  ```
  npm install
